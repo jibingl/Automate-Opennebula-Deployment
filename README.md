@@ -1,4 +1,4 @@
-# Automate-Deployment-of-Opennebula
+# Automate Deployment of Opennebula
 
 How to use Ansible to aotumately deploy OpenNebula service with a front-end server, two KVM Host servers, and a NFS storage server. 
 
