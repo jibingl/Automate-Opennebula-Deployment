@@ -3,8 +3,8 @@ Environment information:
 Role | OS | Unit | IP | Notes |
 -----|----|------|----|-------|
 Management server | CentOS 9 | 1 | 172.31.11.10 | Running Ansible |
-Opennebula front-end server | Ubuntu 22.04 | 1 | 172.31.11.100 | Opennebula Admin: `oneadmin`/`ciscopass` |
-KVM Host servers | Ubuntu 22.04 | 2 | 172.31.11.101; 172.31.11.102 | Hypervisor hosts |
+Opennebula front-end server | Ubuntu 22.04 | 1 | 172.31.11.100 | Opennebula Admin: `oneadmin`/`ciscopass` <br> Domain: one.felixliang.local |
+KVM Host servers | Ubuntu 22.04 | 2 | 172.31.11.101 <br> 172.31.11.102 | Hypervisor hosts |
 NFS server | Ubuntu 22.04 | 1 | 172.31.11.200 | Network storage |
 > 1. All servers set up with an admin account `sysadmin`.
 > 2. Otherwise specified, all below commands are executed with `sudo`.
