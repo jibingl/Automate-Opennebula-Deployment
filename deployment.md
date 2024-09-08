@@ -6,7 +6,7 @@ Management server | CentOS 9 | `admin` | 1 | DHCP | Running Ansible |
 Opennebula front-end server | Ubuntu 22.04 | `sysadmin` | 1 | 172.31.11.100 | FQDN: one.felixliang.local <br> Admin account: `oneadmin`/`ciscopass` |
 KVM Host servers | Ubuntu 22.04 | `sysadmin` | 2 | 172.31.11.101 <br> 172.31.11.102 | Hypervisor hosts |
 NFS server | Ubuntu 22.04 | `sysadmin` | 1 | 172.31.11.200 | Network storage |
-> 1. Set the same password for the `sysadmin` users of the front-end, KVM, and NFS servers. 
+> Set the same password for the `sysadmin` users of the front-end, KVM, and NFS servers. 
 
 ## P1 - Configuring the Front-end Server
 The front-end server is for running the Opennebula all front-end services, https Apache proxy service, and a MySQL database.
