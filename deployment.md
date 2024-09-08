@@ -3,7 +3,7 @@ Environment information:
 Role | OS | Unit | IP | Notes |
 -----|----|------|----|-------|
 Management server | CentOS 9 | 1 | 172.31.11.10 | Running Ansible |
-Opennebula rront-end server | Ubuntu 22.04 | 1 | 172.31.11.100 | All Opennebula services |
+Opennebula front-end server | Ubuntu 22.04 | 1 | 172.31.11.100 | Opennebula Admin: `oneadmin`/`ciscopass` |
 KVM Host servers | Ubuntu 22.04 | 2 | 172.31.11.101; 172.31.11.102 | Hypervisor hosts |
 NFS server | Ubuntu 22.04 | 1 | 172.31.11.200 | Network storage |
 > 1. All servers set up with an admin account `sysadmin`.
@@ -56,7 +56,7 @@ NFS server | Ubuntu 22.04 | 1 | 172.31.11.200 | Network storage |
    cd one-deploy
    nano inventory/shared.yml
    ```
-3. Configure the **shared.yml**) to meet our invironment.
+3. Configure the (**shared.yml**) to meet our invironment.
    ```
    ---
    all:
@@ -112,7 +112,7 @@ NFS server | Ubuntu 22.04 | 1 | 172.31.11.200 | Network storage |
    ```
    ansible-playbook -i inventory/shared.yml opennebula.deploy.main -k
    ```
-# P4 Verifying the Installation
+## P4 Verifying the Installation
 By following the steps [here](https://github.com/OpenNebula/one-deploy/wiki/sys_verify), perform a quick check to verify your installation and your Opennebula system functions.
 
 
